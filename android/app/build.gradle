@@ -76,7 +76,11 @@ android {
     ndkVersion rootProject.ext.ndkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
-
+    
+     compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+     }
     namespace "com.video"
     defaultConfig {
         applicationId "com.video"
@@ -106,6 +110,9 @@ android {
         }
     }
 }
+
+
+
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin

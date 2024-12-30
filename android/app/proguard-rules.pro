@@ -6,5 +6,6 @@
 #
 # For more details, see
 #   http://developer.android.com/guide/developing/tools/proguard.html
+-keep class org.webrtc.** { *; }
 
 # Add any project specific keep options here:
